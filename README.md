@@ -11,7 +11,7 @@ You should apply auth_token from evernote developer website first.
 
 ## Installation
 
-Get the cloudr_doc package and run ::
+Get the project package and run ::
 
     $ make
 
