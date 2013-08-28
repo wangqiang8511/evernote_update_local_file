@@ -1,0 +1,1 @@
+00 13 * * *  {{ project_path }}/bin/python {{ project_path }}/src/update_local_shortcuts.py

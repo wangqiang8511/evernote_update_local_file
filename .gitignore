@@ -1,0 +1,14 @@
+.DS_Store
+*.pyc
+*.pyo
+*.swp
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+crontab
+src/evernote_api.py
+my_token.txt
