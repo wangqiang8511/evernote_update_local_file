@@ -2,6 +2,7 @@
 *.pyc
 *.pyo
 *.swp
+*.bak
 .installed.cfg
 bin
 develop-eggs
@@ -10,5 +11,4 @@ downloads
 eggs
 parts
 crontab
-src/evernote_api.py
 my_token.txt

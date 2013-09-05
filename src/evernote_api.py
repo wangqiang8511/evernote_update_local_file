@@ -6,6 +6,7 @@
 
 import os
 import binascii
+import settings
 from xml.sax.saxutils import escape
 import evernote.edam.userstore.constants as UserStoreConstants
 import evernote.edam.type.ttypes as Types
@@ -13,7 +14,7 @@ import evernote.edam.notestore.ttypes as NoteStoreTypes
 from evernote.api.client import EvernoteClient
 
 # User your own token
-auth_token = "YOUR_AUTH_TOKEN"
+auth_token = settings.auth_token
 
 def get_client():
     return EvernoteClient(token=auth_token, sandbox=True)
