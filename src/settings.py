@@ -1,1 +1,1 @@
-auth_token = YOUR_AUTH_TOKEN
+auth_token = "YOUR_AUTH_TOKEN"

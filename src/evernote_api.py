@@ -15,9 +15,10 @@ from evernote.api.client import EvernoteClient
 
 # User your own token
 auth_token = settings.auth_token
+print auth_token
 
 def get_client():
-    return EvernoteClient(token=auth_token, sandbox=True)
+    return EvernoteClient(token=auth_token, sandbox=False)
 
 
 def get_notebook(client, name):
@@ -72,7 +73,6 @@ def create_note(client, notebook, filename, title, tags, noteList):
     if note:
         note.content = nBody
         note.resources = []
-        note.resources.append(resource)
         note = noteStore.updateNote(note)
     else:
         note = Types.Note()
@@ -81,7 +81,6 @@ def create_note(client, notebook, filename, title, tags, noteList):
         note.tagNames = tags
         note.notebookGuid = notebook.guid
         note.resources = []
-        note.resources.append(resource)
         note = noteStore.createNote(note)
     pass
 
